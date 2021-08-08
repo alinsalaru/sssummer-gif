@@ -1,13 +1,11 @@
 import React from 'react';
-
+import Box from '@material-ui/core/Box';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 
 import useStyles from './Drawer.styles'
 export default function DrawerLeft() {
@@ -23,22 +21,27 @@ export default function DrawerLeft() {
   >
     <Divider />
     <List>
-      {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-        <ListItem button key={text}>
-          <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-          <ListItemText primary={text} />
-        </ListItem>
-      ))}
+      <ListItem button key="cats">
+        <ListItemIcon>😸</ListItemIcon>
+        <ListItemText primary="Cats" />
+      </ListItem>
+      <ListItem button key="dogs">
+        <ListItemIcon>🐕</ListItemIcon>
+        <ListItemText primary="Doggos" />
+      </ListItem>
+
+      <ListItem button key="aliens">
+        <ListItemIcon>👽</ListItemIcon>
+        <ListItemText primary="Aliens" />
+      </ListItem>
+
     </List>
     <Divider />
-    <List>
-      {['All mail', 'Trash', 'Spam'].map((text, index) => (
-        <ListItem button key={text}>
-          <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-          <ListItemText primary={text} />
-        </ListItem>
-      ))}
-    </List>
+    
+    {/* to add links as above for the following */ }
+    <Box mx="auto" bgcolor="background.paper" p={1}>
+    💃   😂   😲
+    </Box>
   </Drawer>
   );
 };
