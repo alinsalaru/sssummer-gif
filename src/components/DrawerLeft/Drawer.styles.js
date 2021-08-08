@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+  },
+  active: {
+    color: 'crimson'
   }
 }));
 

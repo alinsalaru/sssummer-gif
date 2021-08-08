@@ -1,13 +1,14 @@
 import { Typography } from '@material-ui/core';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-//https://developers.giphy.com/explorer
+
 const GifCollector = (props) => {
 
     const {searchItem = 'cats'} = props
 
     const [gifCollection, setGifCollection] = useState([])
 
+    // https://developers.giphy.com/explorer
     const params = {
         api_key: 'INSERT YOUR API KEY HERE',
         q: searchItem,
@@ -15,7 +16,7 @@ const GifCollector = (props) => {
     }  
 
     return (<div>
-       <Typography> Gif collection from: {searchItem}</Typography>
+       <Typography> Rendered gif collection from: {searchItem}</Typography>
     </div>)
 }
 
