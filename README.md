@@ -1,6 +1,11 @@
+# Workshop for Summer School - React Router 
+
+We will create a gif collection by using giphy API, 🐕😸👽, 💃😂😲 emojis and.. you guessed it, react-router!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
