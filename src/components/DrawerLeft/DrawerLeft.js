@@ -48,10 +48,27 @@ export default function DrawerLeft() {
     <Divider />
     
   
-    <Box mx="auto" bgcolor="background.paper" p={1}>
-        <Typography>  add links as above for the following: </Typography>
-        <Typography> 💃   😂   😲</Typography>
-    </Box>
+      <NavLink exact activeClassName={classes.active} to="/dancing">
+        <ListItem button key="dancing">
+            <ListItemIcon>💃</ListItemIcon>
+            <ListItemText primary="Dancing" />
+        </ListItem>
+      </NavLink>
+
+      <NavLink exact activeClassName={classes.active} to="/lol">
+        <ListItem button key="lol">
+                <ListItemIcon>😂</ListItemIcon>
+                <ListItemText primary="Lol" />
+        </ListItem>
+      </NavLink>
+
+      <NavLink exact activeClassName={classes.active} to="/wow">
+        <ListItem button key="wow">
+            <ListItemIcon>😲</ListItemIcon>
+            <ListItemText primary="Wow" />
+        </ListItem>
+      </NavLink>
+  
   </Drawer>
   );
 };
