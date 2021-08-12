@@ -2,6 +2,11 @@
 
 We will create a gif collection by using giphy API, 🐕😸👽, 💃😂😲 emojis and.. you guessed it, react-router!
 
+# Prerequisites:
+- some knowledge about [React, React hooks](https://reactjs.org/docs/hooks-intro.html)
+- some knowledge about [React Router](https://reactrouter.com/web/guides/quick-start)
+- an API key from https://developers.giphy.com/dashboard/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
